@@ -14,8 +14,4 @@ Browser-based crowd light-show app for live events with coarse zone assignment a
 - No auth, accounts, or payments. Put explicit `data-testid` attributes on every cue button, zone picker, live counter, and attendee display surface.
 
 ## Definition of done
-- `npm run typecheck` (`tsc --noEmit`) passes with exit code `0`.
-- `npm test` (`vitest run`) passes with exit code `0`, testing Socket.IO per-zone counts, global cues, zone isolation, refresh/reconnect sync, and blackout.
-- `npm run build` completes the Next.js and server production build with exit code `0`.
-- `npm start` serves Next.js and Socket.IO from a single process on port `8080` (`http://localhost:8080`) with `GET /api/health` returning `200 OK` and no `.env` required.
-- Do not tell me a task is complete until all four commands above have been run and passed.
+- Never report a task complete until verified against all four release gates via the `verify-release` skill.
